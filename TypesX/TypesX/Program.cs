@@ -3,19 +3,28 @@ using TypesX.FS;
 
 Console.WriteLine("- sta x");
 
-var x = ARRef.ByShortRef;
-var y = ARRef.FreeAccess;
-var z = ARRefAll.All;
+var prog = 2; // selector
 
-Console.WriteLine("{0:X}", x);
-Console.WriteLine("{0:X}", y);
-Console.WriteLine("{0:X}", z);
+if (prog == 1)
+{
+    var x = ARRef.ByShortRef;
+    var y = ARRef.FreeAccess;
+    var z = ARRefAll.All;
 
-var values = Enum.GetValues(typeof(ARRef));
+    Console.WriteLine("{0:X}", x);
+    Console.WriteLine("{0:X}", y);
+    Console.WriteLine("{0:X}", z);
 
-Console.WriteLine("{0:X}", values);
+    var values = Enum.GetValues(typeof(ARRef));
 
-var values2 = Enum.GetValues(typeof(ARRefAll)).Cast<ARRefAll>();
-Console.WriteLine("{0:X}", values2);
+    Console.WriteLine("{0:X}", values);
+
+    var values2 = Enum.GetValues(typeof(ARRefAll)).Cast<ARRefAll>();
+    Console.WriteLine("{0:X}", values2);
+}
+else if (prog == 2)
+{
+    var linqx = new LinqX();
+}
 
 Console.WriteLine("- fine dev");
