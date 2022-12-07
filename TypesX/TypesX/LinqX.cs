@@ -6,7 +6,25 @@
 
     public LinqX()
     {
-        Console.WriteLine("{0:X}", 1);
+        Console.WriteLine("{0}", 1);
 
+        var trailings = new byte[]
+        {
+            0x98,
+            0x99,
+        };
+
+        var bytes = new byte[]
+        {
+            0x00,
+            0x03,
+            //trailings.SelectMany<byte>(x => x).ToArray()
+        };
+
+        var x = bytes.Concat(trailings);
+
+        var str = BitConverter.ToString(x.ToArray());
+
+        Console.WriteLine(str);
     }
 }
