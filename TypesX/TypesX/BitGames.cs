@@ -8,15 +8,15 @@ namespace S2T.RemoveAdf
     /// <summary>
     /// Remove ADF related testcases.
     /// </summary>
-    public class RemoveAdf : Seos2TestFixtureContext
+    public class RemoveAdf
     {
-        private static readonly NLog.Logger Log = NLog.LogManager.GetLogger(nameof(RemoveAdf));
+        /*private static readonly NLog.Logger Log = NLog.LogManager.GetLogger(nameof(RemoveAdf));*/
         
         /// <summary>
         /// This Method executes the test case logic for x test
         /// variants.
         /// </summary>
-        private void Ex(RemoveApplicationProfile profile)
+        /*private void Ex(RemoveApplicationProfile profile)
         {
             for (int i = 0; i < profile.Adfs.Length; i++)
             {
@@ -46,8 +46,8 @@ namespace S2T.RemoveAdf
                 Debug.WriteLine(Convert.ToString(lbytev2, toBase: 2).PadLeft(8));
                 Debug.WriteLine(Convert.ToString(lbytev3, toBase: 2).PadLeft(8));
 
-                var cmdempty = new RemoveApplicationCommand(new TlvData((uint)Seos2Tags.SEOS_OID, currentOid));
+                var cmdempty = new RemoveApplicationCommand(new TlvData((uint)X2Tags.x_OID, currentOid));
             }
-        }
+        }*/
     }
 }
