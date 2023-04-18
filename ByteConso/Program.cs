@@ -41,7 +41,7 @@ Console.WriteLine("xclone before:");
 Console.WriteLine(Convert.ToString(xclone.First(), toBase: 2).PadLeft(8, '0'));
 Console.WriteLine(Convert.ToString(xclone[1], toBase: 2).PadLeft(8, '0'));
 
-xcopy[0] = (byte)(xclone[0] ^ 0x01);
+xclone[0] = (byte)(xclone[0] ^ 0x01);
 
 Console.WriteLine("xclone after:");
 Console.WriteLine(Convert.ToString(xclone.First(), toBase: 2).PadLeft(8, '0'));
