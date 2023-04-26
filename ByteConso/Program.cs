@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 using System.Diagnostics;
 
 Console.WriteLine("hi bytes");
@@ -7,6 +7,8 @@ byte[] buffer = new byte[] { 0x01, 0x02, };
 
 var xclone = (byte[])buffer.Clone();
 var xcopy = buffer;
+
+/* x */
 
 // #####################
 Console.WriteLine("xcopy before:");
