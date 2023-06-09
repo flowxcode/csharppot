@@ -11,7 +11,7 @@ namespace ByteVariants
         public static readonly IEnumerable<byte> ByteRange = Enumerable.Range(0, 256)
             .Select(x => (byte)x);
 
-        private static readonly byte[] AcceptedCla =
+        public static readonly byte[] AcceptedCla =
         {
             0x00,
             0x10,
