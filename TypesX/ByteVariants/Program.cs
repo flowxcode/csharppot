@@ -8,7 +8,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello byte v");
+        var env = Environment.GetEnvironmentVariable("MAR_DUT");
+        Console.WriteLine($"Hello byte v env:{env?.ToString()}");
 
         foreach (var item in Byties.AcceptedCla)
         {
