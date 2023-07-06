@@ -18,9 +18,10 @@ internal class Program
             Console.WriteLine(Convert.ToString(item, toBase: 2).PadLeft(8, '0'));
         }
 
-        Console.WriteLine("----------------------------");
+        var byties = new Byties();
+        var testdata = byties.WrongClaTestDataX().ToList();
 
-        var testdata = Byties.WrongClaTestDataX();
+        Console.WriteLine("\n---------------------------- " + testdata.Count());
 
         foreach (var item in testdata)
         {
@@ -29,6 +30,6 @@ internal class Program
             Console.WriteLine(Convert.ToString(item, toBase: 2).PadLeft(8, '0'));
         }
 
-        Console.WriteLine("done");
+        Console.WriteLine("done " + testdata.Count());
     }
 }
