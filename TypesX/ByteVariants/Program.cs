@@ -6,6 +6,13 @@ using static System.Formats.Asn1.AsnWriter;
 
 internal class Program
 {
+    public const byte P1Amr = 12;
+    public const byte P1AmrHex = 0x12;
+
+    public const byte P2Amr = 3;
+
+    public const byte P1GetData = 63;
+
     private static void Main(string[] args)
     {
         var env = Environment.GetEnvironmentVariable("MAR_DUT");
