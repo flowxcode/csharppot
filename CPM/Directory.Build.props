@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- Default: Central Package Management is OFF for all projects -->
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+</Project>
